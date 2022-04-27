@@ -65,7 +65,7 @@ public class BaseDao {
             //setObject,占位符从1开始，但是我们的数组是从0开始！
             preparedStatement.setObject(i+1,params[i]);
         }
-
+//
         int updateRows = preparedStatement.executeUpdate();
         return updateRows;
     }
